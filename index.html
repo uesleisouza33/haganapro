@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Haganá Pro Audio</title>
+</head>
+<body class="bg-gray-100 m-0 p-0">
+    <header class="sticky top-0 z-[100] bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center h-24">
+            <!-- Logo -->
+            <div class="flex items-center h-14 mr-32">
+                <img src="./assets/img/hglogo.png" alt="Haganá Pro Audio" class="h-full object-contain ">
+            </div>
+            <!-- Desktop menu -->
+             <nav class="hidden md:flex space-x-10">
+                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Início</a>
+                <!-- Products submenu -->
+                <div class="relative group">
+                    <button class="text-blue-900 hover:text-orange-500 text-lg cursor-pointer ">Produtos</button>
+
+                    <!-- Submenu -->
+                     <div class="absolute left-0 top-full w-48 p-1 text-left bg-white border-1 rounded-sm shadow-lg hidden group-hover:block z-10">
+                        <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Line Array</a>
+                        <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Subgraves</a>
+                        <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Hard Cases</a>
+                        <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Monitores de Palco</a>
+                     </div>
+                </div>
+                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Sobre</a>
+                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Contato</a>
+             </nav>
+
+             <!-- Mobile button -->
+             <div class="md:hidden">
+                <button id="menu-toggle" class="text-blue-800 focus:outline-none text-3xl">☰</button>
+             </div>
+            <!-- Mobile menu -->
+             <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-md px-6 pb-2 pt-16 space-y-4">
+                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Início</a>
+                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Produtos</a>
+                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Sobre</a>
+                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Contato</a>
+             </nav>
+             <script src="./assets/js/mobileMenu.js"></script>
+        </div>
+    </header>
+
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+        
+        <!-- Text -->
+            <div class="flex-1 text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4 leading-snug">
+                Equipamentos profissionais<br class="hidden md:block">para elevar seu som
+            </h1>
+            <p class="text-lg text-shadow-gray-950 mb-6">
+                Hardcases, line arrays, subgraves e monitores de palco com alto desempenho e durabilidade.
+            </p>
+            <a href="#produtos" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-2xl font-semibold hover:bg-orange-400 transition duration-700">
+                Produtos
+            </a>
+            </div>
+
+            <!-- Slider -->
+            <div class="flex-1 w-full max-w-md">
+            <div class="swiper h-72 rounded-xl shadow-lg overflow-hidden">
+                <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="./assets/img/lines_array_example.jpeg" alt="Line Array" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="./assets/img/lines_array_example.jpeg" alt="Line Array" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="./assets/img/lines_array_example.jpeg" alt="Line Array" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <img src="./assets/img/lines_array_example.jpeg" alt="Line Array" class="w-full h-full object-cover">
+                </div>
+
+                </div>
+                <!-- Paginação -->
+                <div class="swiper-pagination mt-8"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4 leading-none">
+                Produtos<br class="hidden md:block">em destaque
+                </h1>
+
+                 <div class="swiper produtosSwiper max-w-4xl mx-auto">
+
+        <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide flex flex-col items-center text-center px-4">
+            <img src="img/hardcase.jpg" alt="Hardcase" class="w-full h-80 object-cover rounded-xl shadow-md" />
+            <p class="mt-4 font-semibold text-blue-800">Hardcase Profissional</p>
+            <a href="#contato" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-orange-600 transition">
+            Saiba mais!
+            </a>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide flex flex-col items-center text-center px-4">
+            <img src="img/linearray.jpg" alt="Line Array" class="w-full h-80 object-cover rounded-xl shadow-md" />
+            <p class="mt-4 font-semibold text-blue-800">Line Array Profissional</p>
+            <a href="#contato" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-orange-600 transition">
+            Saiba mais!
+            </a>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide flex flex-col items-center text-center px-4">
+            <img src="img/grave.jpg" alt="Subgrave" class="w-full h-80 object-cover rounded-xl shadow-md" />
+            <p class="mt-4 font-semibold text-blue-800">Subgrave Potente</p>
+            <a href="#contato" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-orange-600 transition">
+            Saiba mais!
+            </a>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide flex flex-col items-center text-center px-4">
+            <img src="img/monitor.jpg" alt="Monitor de Palco" class="w-full h-80 object-cover rounded-xl shadow-md" />
+            <p class="mt-4 font-semibold text-blue-800">Monitor de Palco</p>
+            <a href="#contato" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-orange-600 transition">
+            Saiba mais!
+            </a>
+        </div>
+        </div>
+
+
+        <!-- Pagination (bolinhas) -->
+        <div class="swiper-pagination mb-20"></div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+        delay: 3000,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+    });
+    </script>
+</body>
+</html>
