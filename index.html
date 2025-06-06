@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Haganá Pro Audio</title>
 </head>
-<body class="bg-gray-100 m-0 p-0">
+<body class="bg-gray-100 m-0 p-0 overflow-x-hidden">
     <header class="sticky top-0 z-[100] bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center h-24">
             <!-- Logo -->
@@ -35,14 +35,16 @@
 
              <!-- Mobile button -->
              <div class="md:hidden">
-                <button id="menu-toggle" class="text-blue-800 focus:outline-none text-3xl">☰</button>
+                <button id="menu-toggle" class="sticky text-blue-800 focus:outline-none text-3xl">☰</button>
              </div>
             <!-- Mobile menu -->
-             <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-md px-6 pb-2 pt-16 space-y-4">
-                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Início</a>
-                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Produtos</a>
-                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Sobre</a>
-                <a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Contato</a>
+             <nav id="mobile-menu" class="hidden md:hidden w-full bg-white shadow-inner border-t">
+                <ul class="flex flex-row gap-4 justify-around text-blue-800 font-medium px-4 py-3 transition-all ease-in duration-1000">
+                    <li><a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Início</a></li>
+                    <li><a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Produtos</a></li>
+                    <li><a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Sobre</a></li>
+                    <li><a href="#" class="block text-blue-900 hover:text-orange-500 text-lg">Contato</a></li>
+                </ul>
              </nav>
              <script src="./assets/js/mobileMenu.js"></script>
         </div>
